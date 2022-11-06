@@ -1,0 +1,183 @@
+html{
+    height: 100%;
+    background-image: url("images/bkr.jpg")
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+  }
+
+.countdown{
+    top: 20px;
+    position: absolute;
+}
+
+#container{
+    height: 650px;
+    width: 750px;
+    margin: 10px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#score{
+    width: 80px;
+    color: white;
+    text-shadow: 1px 2px #000000;
+    padding: 10px;
+    position: absolute;
+    left: 95px;
+    background-color: #00000067;
+    border-radius: 20px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+#scorevalue{
+    color: #ff0000;
+}
+
+#trialsLeft{
+    right: 95px;
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    background-color: #00000067;
+    border-radius: 20px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#fruitsContainer{
+    width: 650px;
+    position: relative;
+    height: 520px;
+    margin: -60px auto -10px auto;
+    box-shadow: 0px 4px #ff000078;
+    -moz-box-shadow: 0px 4px #ff000078;
+    -webkit-box-shadow: 0px 10px #ff000078;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+    overflow: hidden; 
+   
+
+}
+
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+#startreset{
+    color: white;
+    text-shadow: 1px 2px #000000
+    ;}
+
+
+#startreset:hover{
+   background-color: #ff770070;
+    color: white;
+    box-shadow: 5px 5px  #00000096;
+    -moz-box-shadow: 0px 4px #00000096;
+}
+
+#startreset:active{
+    background-color: #ff770070;
+    color: white;
+    box-shadow: 0px 0px #060606; 
+    -moz-box-shadow: 0px 0px #ffffff; 
+    -webkit-box-shadow: 0px 0px #ffffff; 
+    border: solid black 2px;
+    top: 4px;
+}
+
+#startreset{
+    width: 100px;
+    padding: 20px;
+    background-color: rgba(230, 230, 230, 0.438);
+    margin: 50px auto;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;     
+}
+
+#gameOver{
+    height: 200px;
+    border-radius: 20px;
+    width: 400px;
+    color: rgb(195, 3, 3);
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    top: 170px;
+    left: 200px;
+    z-index: 2;
+    display: none;
+    background: linear-gradient(0deg, rgba(173,173,173,0.5214460784313726) 0%, rgba(255, 255, 255, 0.663) 50%, rgba(255,255,255,1) 100%);
+}
+
+#gameOver p:nth-child(2){
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -20px;
+    font-weight:lighter;
+}
+
+#gameOver span{
+    color: rgb(255, 0, 0);
+}
+
+.life{
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+}
+
+.fruit{
+    display: none;
+    position: absolute;  
+}
+
+#fruit1{
+    display: none;
+    position: absolute;
+}
+
