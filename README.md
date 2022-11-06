@@ -1,3 +1,5 @@
+# Fruit slice game
+
 https://fruitslicegame.netlify.app/
 
 Hover your mouse over the fruit to cut and increase the score. Three attempts are available. Have fun!
